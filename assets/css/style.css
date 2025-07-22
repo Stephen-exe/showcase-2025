@@ -166,6 +166,7 @@ main {
   padding: 0 0 20px 0;
   margin: 0.5em;
   text-decoration: none;
+  background-blend-mode: soft-light;
   background-size: 150%;
   transition: all 0.5s;
   font-size: 0.9rem;
@@ -220,15 +221,25 @@ main {
 
 /* portfolio project images */
 /* TODO: Add portfolio project images here using background images*/
-.run-buddy {}
+.run-buddy {
+  background-image: url('../images/02-run-buddy.jpg');
+}
 
-.led-wall {}
+.led-wall {
+  background-image: url('../images/02-portfolio-1.jpg');
+}
 
-.react-calc {}
+.react-calc {
+  background-image: url('../images/02-portfolio-2.jpg');
+}
 
-.pastel-puzzles {}
+.pastel-puzzles {
+  background-image: url('../images/02-portfolio-3.jpg');
+}
 
-.surf-report {}
+.surf-report {
+  background-image: url('../images/02-portfolio-4.jpg');
+}
 
 /* media queries */
 
@@ -267,4 +278,24 @@ main {
 }
 
 /* TODO: add media query for a max-width of 768px */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
